@@ -5,6 +5,8 @@ cartmsg_ = rosmessage(cartsvc_);
 cartmsg_.TargetPoints=[0.193,0,0,0];
 cartsvc_.call(cartmsg_)
 
+suctionOn();
+
 cartmsg_.TargetPoints=[0.193,0,-0.033,0];
 cartsvc_.call(cartmsg_)
 
