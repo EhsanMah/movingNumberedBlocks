@@ -20,7 +20,7 @@ function [bloc1Flag] = moveToGrid(j)
         case 9
             goToBlockH();
         otherwise
-                break ;
+                return ;
                         
     end
     x = 1;

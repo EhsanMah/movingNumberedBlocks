@@ -3,7 +3,7 @@ clc;
 clf;
 %% Take Photo
 
-% startBlockPicking();
+ startBlockPicking();
 colorDevice = imaq.VideoDevice('kinect',1)
   depthDevice = imaq.VideoDevice('kinect',2)
   
@@ -23,7 +23,8 @@ colorDevice = imaq.VideoDevice('kinect',1)
   
  
 %% Image Flip
-I = imread('TestImage.jpg');
+I = colorImage;
+% I = imread('TestImage.jpg');
 I2 = imrotate(I,180); 
 % subplot(2,2,1) 
 % imshow(I2)
@@ -38,15 +39,16 @@ r = scanBlockA(Ir);
 i= gridLookup(r,Ir);
 
 pickBlock1();
+%% test
 moveToGrid(i);
 
-if moveToGrid(bloc1Flag) == 1
+if moveToGrid(i) == 1
     d = scanBlockB(Ir);
     e=gridLookup(d,Ir);
-    k= gridNum;
+    
     pickBlock2();
-    moveToGrid(k);
-    if moveToGrid(bloc1Flag) == 1
+    moveToGrid(e);
+    if moveToGrid(e) == 1
          p = scanBlockB(Ir);
          w=gridLookup(p);
          
