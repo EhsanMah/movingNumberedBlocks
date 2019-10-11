@@ -1,26 +1,26 @@
 function [bloc1Flag] = moveToGrid(j)
-    x=0;
+   x=0;
     switch j
         case 1
-            gridNum =1;
+            goToBlockA();
         case 2
-            gridNum =2;
+            goToBlockB();
         case 3
-            gridNum =3;
+            goToBlockC();
         case 4
-            gridNum =4;
+            goToBlockC();
         case 5
-            gridNum =5;
+            goToBlockD();
         case 6
-            gridNum =6;
+            goToBlockE();
         case 7
-            gridNum =7;
+            goToBlockF();
         case 8
-            gridNum =8;
+            goToBlockG();
         case 9
-            gridNum =9;
+            goToBlockH();
         otherwise
-                gridNum = null;
+                break ;
                         
     end
     x = 1;

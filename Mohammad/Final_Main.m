@@ -31,10 +31,24 @@ title 'original image'
 % subplot(2,2,2) 
 imshow(Ir)
 title 'flipped image'
-
+%% Movement
 r = scanBlockA(Ir);
 i=gridLookup(r);
+pickBlock1();
 moveToGrid(i);
 
+if moveTogrid(bloc1Flag) == 1
+    d = scanBlockB(Ir);
+    k=gridLookup(d);
+    pickBlock2();
+    moveToGrid(k);
+    if moveTogrid(bloc1Flag) == 1
+         p = scanBlockB(Ir);
+         m=gridLookup(p);
+         pickBlock3();
+          moveToGrid(m);
+    end
+    
+end
 
  
