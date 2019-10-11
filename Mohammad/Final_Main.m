@@ -39,7 +39,7 @@ r = scanBlockA(Ir);
 i= gridLookup(r,Ir);
 
 pickBlock1();
-%% test
+
 moveToGrid(i);
 
 if moveToGrid(i) == 1

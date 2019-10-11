@@ -1,5 +1,5 @@
 function [bloc1Flag] = moveToGrid(j)
-   x=0;
+   
     switch j
         case 1
             goToBlockA();
@@ -23,7 +23,10 @@ function [bloc1Flag] = moveToGrid(j)
                 return ;
                         
     end
-    x = 1;
-    bloc1Flag = x;
+    
+    if 0<j && j<10
+    bloc1Flag = 1;
+    end
+    
 end
 
