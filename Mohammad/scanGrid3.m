@@ -1,7 +1,7 @@
 function [scannedNum] = scanGrid3(rgb)
 I = rgb;
 idisp(I)
-I2 = imcrop(I,[1403 328 200 200]); %[initial u ,initial v,Length, width]
+I2 = imcrop(I,[1419 372 150 150]); %[initial u ,initial v,Length, width]
 % subplot(1,2,1)
 figure;
 idisp(I)

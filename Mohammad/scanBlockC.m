@@ -1,7 +1,7 @@
 function [scannedNum] = scanBlockC(rgb)
 I = rgb;
 idisp(I)
-I2 = imcrop(I,[1578 687 200 200]); %[initial u ,initial v,Length, width]
+I2 = imcrop(I,[1712 755 150 150]); %[initial u ,initial v,Length, width]
 % subplot(1,2,1)
 figure;
 idisp(I)

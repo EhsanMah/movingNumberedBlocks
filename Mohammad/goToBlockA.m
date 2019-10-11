@@ -9,10 +9,11 @@ suctionOn();
 
 cartmsg_.TargetPoints=[0.284,0.043,-0.036,0];    
 cartsvc_.call(cartmsg_)
+suctionOn();
 suctionOff();
 cartmsg_.TargetPoints=[0.284,0.05,0.018,0];
 cartsvc_.call(cartmsg_)
 
-startBlockPicking()
+% startBlockPicking()
 end
 

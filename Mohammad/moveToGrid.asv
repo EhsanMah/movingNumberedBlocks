@@ -10,15 +10,15 @@ function [bloc1Flag] = moveToGrid(j)
         case 4
             goToBlockD();
         case 5
-            goToBlockE();
+            goToBlock();
         case 6
-            goToBlockF();
+            goToBlockE();
         case 7
-            goToBlockG();
+            goToBlockF();
         case 8
-            goToBlockH();
+            goToBlockG();
         case 9
-            goToBlockI();
+            goToBlockH();
         otherwise
                 return ;
                         

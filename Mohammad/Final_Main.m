@@ -41,7 +41,7 @@ i= gridLookup(r,Ir);
 pickBlock1();
 
 moveToGrid(i);
-%% try
+%% dj
 blocFlag1 = 1
 
 if blocFlag1 == 1
@@ -52,17 +52,20 @@ if blocFlag1 == 1
     
     pickBlock2();
     moveToGrid(e);
-    blocFlag2 = 1
-    if blocFlag2 == 1
-        suctionOff();
-        p = scanBlockB(Ir);
-        w=gridLookup(p);
-         
+       
+end
+suctionOff();
+%% test
+blocFlag2 = 1 
+% suctionOff();
+ if blocFlag2 == 1
+        
+        p = scanBlockC(Ir);
+        
+        w=gridLookup(p,Ir);
+        
         pickBlock3();
         moveToGrid(w);
-    end
+ end
   suctionOff();
   startBlockPicking();
-end
-
- 
