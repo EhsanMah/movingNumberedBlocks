@@ -24,9 +24,9 @@ function [bloc1Flag] = moveToGrid(j)
                         
     end
     
-    if 0<j && j<10
-    bloc1Flag = 1;
-    end
+%     if 0<j && j<10
+%     bloc1Flag = 1;
+%     end
     
 end
 

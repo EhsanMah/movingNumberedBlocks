@@ -41,28 +41,22 @@ i= gridLookup(r,Ir);
 pickBlock1();
 
 moveToGrid(i);
-%% try
-blocFlag1 = 1
 
-if blocFlag1 == 1
+if moveToGrid(i) == 1
     suctionOff();
-    startBlockPicking();
     d = scanBlockB(Ir);
     e=gridLookup(d,Ir);
     
     pickBlock2();
     moveToGrid(e);
-    blocFlag2 = 1
-    if blocFlag2 == 1
-        suctionOff();
-        p = scanBlockB(Ir);
-        w=gridLookup(p);
+    if moveToGrid(e) == 1
+         p = scanBlockB(Ir);
+         w=gridLookup(p);
          
-        pickBlock3();
-        moveToGrid(w);
+         pickBlock3();
+          moveToGrid(w);
     end
-  suctionOff();
-  startBlockPicking();
+    
 end
 
  
